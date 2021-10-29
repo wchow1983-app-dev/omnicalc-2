@@ -1,0 +1,30 @@
+<dl>
+
+  <dt>Latitude</dt>
+  <dd><%= @latitude %></dd>
+
+  <dt>Longitude</dt>
+  <dd><%= @longitude %></dd>
+
+  <dt>Current Temperature</dt>
+  <dd><%= @currently_temperature_hash %></dd>
+
+  <dt>Current Summary</dt>
+  <dd><%= @currently_summary_hash %></dd>
+  
+  <dt>Outlook for next sixty minutes</dt>
+  <dd><%= @minutely_summary_hash %></dd>
+
+  <dt>Outlook for next several hours</dt>
+  <dd><%= @hourly_summary_hash %></dd>
+
+  <dt>Outlook for next several days</dt>
+  <dd><%= @daily_summary_hash %></dd>
+
+</dl>
+
+  <p><%= @parsed_data.fetch("currently").class %></p>
+  <p><%= @currently_temperature_hash %></p>
+  <p><%= @minutely_summary_hash %></p>
+  <p><%= @hourly_summary_hash %></p>
+  <p><%= @daily_summary_hash %></p>

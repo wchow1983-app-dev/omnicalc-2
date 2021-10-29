@@ -12,7 +12,16 @@ Rails.application.routes.draw do
   get("/wizard_multiply", { :controller => "application", :action => "multiplication_result" })
   get("/wizard_divide", { :controller => "application", :action => "division_result" })
 
+  # API section
 
+  get("/street_to_coords/new", { :controller => "coordinates", :action => "street_form" })
+  get("/coords_to_weather/new", { :controller => "coordinates", :action => "coordinates_form" })
+  get("/street_to_weather/new", { :controller => "coordinates", :action => "weather_form" })
+
+
+  get("/street_to_coords/results", { :controller => "coordinates", :action => "street_result" })
+  get("/coords_to_weather/results", { :controller => "coordinates", :action => "coordinates_result" })
+  get("/street_to_weather/results", { :controller => "coordinates", :action => "weather_result" })
 
   
 end

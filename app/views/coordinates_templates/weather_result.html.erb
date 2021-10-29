@@ -1,0 +1,21 @@
+<h1>Weather results for <%= @street_address %></h1>
+
+<dl>
+
+  <dt>Current Temperature</dt>
+  <dd><%= @currently_temperature_hash %></dd>
+
+  <dt>Current Summary</dt>
+  <dd><%= @currently_summary_hash %></dd>
+  
+  <dt>Outlook for next sixty minutes</dt>
+  <dd><%= @minutely_summary_hash %></dd>
+
+  <dt>Outlook for next several hours</dt>
+  <dd><%= @hourly_summary_hash %></dd>
+
+  <dt>Outlook for next several days</dt>
+  <dd><%= @daily_summary_hash %></dd>
+
+</dl>
+
