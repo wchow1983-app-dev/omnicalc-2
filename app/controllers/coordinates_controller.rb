@@ -1,6 +1,8 @@
 class CoordinatesController < ActionController::Base
   layout("application.html.erb")
 
+# Form Contollers/Actions
+
   def street_form
     render ({:template => "/coordinates_templates/street_form.html.erb"})
   end
@@ -14,7 +16,7 @@ class CoordinatesController < ActionController::Base
   end
 
 
-  #get("/street_to_weather/results", { :controller => "coordinates", :action => "weather_result" })
+# Result Contollers/Actions
 
   def street_result
     @street_address = params.fetch("street_address")
